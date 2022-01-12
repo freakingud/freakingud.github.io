@@ -1,1 +1,54 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>freakingud's Blog</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <span id="logo">freakingud's Blog</span>
+  <ul>
+  <a href="#about">About</a>
+  <a href="#categories">Categories</a>
+  <a href="#projects">Projects</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </ul>
+</div>
+
+<div class="container">
+    <div class="left-container">
+        <img src="https://pbs.twimg.com/profile_images/1374371932288643081/IyX3zu50_400x400.jpg" alt="freakingud">
+        <span class="name">Abhishek Yadav</span>
+        <ul>
+            <li>location</li>
+            <li>Home</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Github</li>
+            <li>LinkedIn</li>
+        </ul>
+    </div>
+    <div class="right-container">
+        <h1>Recent Posts</h2>
+        <hr>
+    </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
